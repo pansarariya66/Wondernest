@@ -345,3 +345,102 @@ a {
     transform: scale(1.01);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
+
+/* DESTINATIONS PAGE LAYOUT */
+.dest_banner_section {
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('/assets/images/banner/about-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.filter_btn {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: var(--pure-white);
+    color: var(--dark-slate-grey);
+    padding: 10px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-style: 14px;
+    transition: var(--transition-smooth);
+}
+.filter_btn:hover,
+.filter_btn.active_filter {
+    background-color: var(--primary-travel-teal);
+    color: var(--pure-white);
+    border-color: var(--primary-travel-teal);
+    box-shadow: 0 4px 12px rgba(0, 168, 150, 0.25);
+}
+.category_tag_badge {
+    top: 16px;
+    right: 16px;
+    background-color: rgba(255, 255, 255, 0.92);
+    color: var(--dark-slate-grey);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 14px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    z-index: 10;
+}
+.clamped_desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* DESTINATIONS DETAILS PAGE LAYOUT */
+.badge.bg-success-subtle {
+    display: inline-block;
+    height: fit-content;
+    padding: 8px 18px;
+}
+.zoom_pan_container {
+    width: 100%;
+    height: 440px;
+    overflow: hidden;
+    cursor: zoom-in;
+    background-color: #000000;
+}
+.zoom_pan_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.15s ease-out;
+}
+.zoom_hint_badge {
+    bottom: 16px;
+    right: 16px;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: #ffffff;
+    font-size: 12px;
+    padding: 6px 14px;
+    border-radius: 30px;
+    z-index: 10;
+    pointer-events: none;
+}
+.thumb_gallery_img {
+    width: 100%;
+    height: 95px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: var(--transition-smooth);
+}
+.thumb_gallery_img:hover {
+    border-color: var(--primary-travel-teal);
+    transform: translateY(-2px);
+}
+.sticky_booking_card {
+    position: sticky;
+    top: 100px;
+    z-index: 20;
+}
+.accordion-button:not(.collapsed) {
+    background-color: rgba(0, 168, 150, 0.1);
+    color: var(--primary-travel-teal);
+    box-shadow: none;
+}
