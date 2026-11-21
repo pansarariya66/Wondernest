@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Package &amp; Pricing - WanderNest Travel Agency</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/bootstrap.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="/assets/plugins/swiper/swiper-bunder.min.css">
+    <!-- Animation Module -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Custom External CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="sticky-top shadow-sm bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light py-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-3 text-uppercase" href="index.html" style="color: var(--dark-slate-grey);">
+                    Wander <span style="color: var(--primary-travel-teal);">Nest</span>
+                </a>
+
+                <!-- Fluid Harmburger Reponsive Toggle Mechinism Trigger Button -->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggler="collapse" 
+                    data-bs-target="#wandernest_global_nav" aria-controls="wandernest_global_nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu Directory FLex columns wrapper Links grid -->
+                <div class="collapse navbar-collapse" id="wandernest_global_nav">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3 fw-medium">
+                        <li class="nav-item">
+                            <a class="nav-link active px-2 text-success" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 text-secondary" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 text-secondary" href="destinations.html">Destinations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 text-secondary" href="packages.html">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 text-secondary" href="gallery.html">Gallery</a>
+                        </li>
+                    </ul>
+
+                    <!-- Booking Triggler Control Module -->
+                    <div class="d-flex">
+                        <a href="contact.html" class="btn px-4 py-2 rounded-pill fw-semibold text-white" 
+                        style="background-color: var(--primary-travel-teal); transition: var(--transition-smooth);">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="packages_banner_section text-white d-flex align-items-center justify-content-center">
+            <div class="container text-center wow animate_animated animate_fadeIn">
+                <h1 class="display-4 fw-bold">Tour Packages &amp; Plans</h1>
+                <nav class="breadcrumb_trail fs-6 mt-2">
+                    <a href="index.html" class="text-white opacity-75">Home</a> &gt; <span class="text-white fw-semibold">Packages</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Package Pricing Cards -->
+        <section class="py-5">
+            <div class="container py-4">
+                <div class="text-center mb-5 wow animate_animated animate_fadeInUp">
+                    <span class="text-uppercase fw-bold text-success tracking-widest small_sub_badge">Flexible Tiers</span>
+                    <h2 class="display-5 fw-bold text-dark my-2">Choose Your Travel Experience</h2>
+                    <p class="text-secondary">
+                        Transparent pricing packages crafted for solo backpackers, families, and luxury travelers.
+                    </p>
+                </div>
+
+                <div class="row g-4 align-items-stretch">
+                    <!-- Tier 1: Basic -->
+                    <div class="col-12 col-md-6 col-lg-3 wow animate_animated animate_fadeInUp" data-wow-delay="0.1s">
+                        <div class="pricing_card bg-white p-4 rounded-4 shadow-sm h-100 d-flex flex-column">
+                            <span class="text-uppercase fw-bold text-muted small">Basic</span>
+                            <h3 class="display-6 fw-bold text-dark my-2">$299 <span class="fs-6 text-muted fw-normal">/ trip</span></h3>
+                            <p class="text-secondary small mb-4">Ideal for budget solo travelers and weekend explorers.</p>
+                            <ul class="list-unstyled d-flex flex-column gap-2 small text-secondary mb-4">
+                                <li><span class="text-success fw-bold">✔</span>3 Days / 2 Nights Stay</li>
+                                <li><span class="text-success fw-bold">✔</span>3-star Comfort Hotel</li>
+                                <li><span class="text-success fw-bold">✔</span>Daily Complimentary Breakfast</li>
+                                <li><span class="text-success fw-bold">✔</span>Shared Airport Transfers</li>
+                                <li class="text-muted opacity-50">✖ Private Tour Guide</li>
+                                <li class="text-muted opacity-50">✖ Candlelight Dinner &amp; Spa</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline-dark w-100 rounded-pill py-2 fw-semibold mt-auto">
+                                Select Basic
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tier 2: Standard -->
+                    <div class="col-12 col-md-6 col-lg-3 wow animate_animated animate_fadeInUp" data-wow-delay="0.2s">
+                        <div class="pricing_card bg-white p-4 rounded-4 shadow-sm h-100 d-flex flex-column">
+                            <span class="text-uppercase fw-bold text-muted small">Standard</span>
+                            <h3 class="display-6 fw-bold text-dark my-2">$599 <span class="fs-6 text-muted fw-normal">/ trip</span></h3>
+                            <p class="text-secondary small mb-4">Balanced comfort and guided sightseeing for couples.</p>
+                            <ul class="list-unstyled d-flex flex-column gap-2 small text-secondary mb-4">
+                                <li><span class="text-success fw-bold">✔</span>5 Days / 4 Nights Stay</li>
+                                <li><span class="text-success fw-bold">✔</span>4-star Boutique Resort</li>
+                                <li><span class="text-success fw-bold">✔</span>Breakfast &amp; Dinner Included</li>
+                                <li><span class="text-success fw-bold">✔</span>Private Sedan Transfers</li>
+                                <li><span class="text-success fw-bold">✔</span>Group sightseeing Tours</li>
+                                <li class="text-muted opacity-50">✖ VIP Lounge &amp; Yacht Cruise</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline-dark w-100 rounded-pill py-2 fw-semibold mt-auto">
+                                Select Standard
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tier 3: Premium -->
+                    <div class="col-12 col-md-6 col-lg-3 wow animate_animated animate_fadeInUp" data-wow-delay="0.3s">
+                        <div class="pricing_card bg-white p-4 rounded-4 shadow-sm h-100 d-flex flex-column">
+                            <span class="text-uppercase fw-bold text-muted small">★ Most Popular</span>
+                            <span class="text-uppercase fw-bold small" style="color: var(--primary-travel-teal);">Premium</span>
+                            <h3 class="display-6 fw-bold text-dark my-2">$999 <span class="fs-6 text-muted fw-normal">/ trip</span></h3>
+                            <p class="text-secondary small mb-4">All-inclusive luxury getaway with dedicated personal guide.</p>
+                            <ul class="list-unstyled d-flex flex-column gap-2 small text-secondary mb-4">
+                                <li><span class="text-success fw-bold">✔</span>6 Days / 5 Nights Stay</li>
+                                <li><span class="text-success fw-bold">✔</span>5-star Luxury Oceanfront Resort</li>
+                                <li><span class="text-success fw-bold">✔</span>All Meals &amp; Gourmet Dining</li>
+                                <li><span class="text-success fw-bold">✔</span>Private SUV &amp; Speedboat</li>
+                                <li><span class="text-success fw-bold">✔</span>Dedicated Personal Tour Guide</li>
+                                <li><span class="text-success fw-bold">✔</span>Sunset Yacht &amp; Spa Session</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline-dark w-100 rounded-pill py-2 fw-semibold mt-auto">
+                                Choose Premium
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tier 4: Luxury -->
+                    <div class="col-12 col-md-6 col-lg-3 wow animate_animated animate_fadeInUp" data-wow-delay="0.4s">
+                        <div class="pricing_card bg-white p-4 rounded-4 shadow-sm h-100 d-flex flex-column">
+                            <span class="text-uppercase fw-bold text-muted small">Luxury</span>
+                            <h3 class="display-6 fw-bold text-dark my-2">$1,699 <span class="fs-6 text-muted fw-normal">/ trip</span></h3>
+                            <p class="text-secondary small mb-4">Ultra-exclusive VIP private villa and helicopter transfers.</p>
+                            <ul class="list-unstyled d-flex flex-column gap-2 small text-secondary mb-4">
+                                <li><span class="text-success fw-bold">✔</span> 8 Days / 7 Nights Stay</li>
+                                <li><span class="text-success fw-bold">✔</span> Private Overwater Pool Villa</li>
+                                <li><span class="text-success fw-bold">✔</span> Private Chef & Fine Dining</li>
+                                <li><span class="text-success fw-bold">✔</span> Helicopter & Chauffeur Fleet</li>
+                                <li><span class="text-success fw-bold">✔</span> 24/7 Personal Butler Concierge</li>
+                                <li><span class="text-success fw-bold">✔</span> Unlimited Water Sports & Spa</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline-dark w-100 rounded-pill py-2 fw-semibold mt-auto">
+                                Select Luxury
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 bg-white border-top border-bottom">
+            <div class="container py-3">
+                <div class="text-center mb-5 wow animate_animated animate_fadeInUp">
+                    <h2 class="fw-bold text-dark">Compare Package Features</h2>
+                    <p class="text-secondary small">
+                        Swipe horizontally on mobile screens to view all plan details.
+                    </p>
+                </div>
+
+                <div class="table-responsive rounded-4 shadow-sm border wow animate_animated animate_fadeInUp">
+                    <table class="table table-hover align-middle text-center mb-0 comparision_table ">
+                        <thead class="table-dark">
+                            <tr>
+                                <th class="text-start ps-4 py-3">Included Features</th>
+                                <th class="py-3">Basic ($299)</th>
+                                <th class="py-3">Standard ($599)</th>
+                                <th class="py-3" style="background-color: var(--primary-travel-teal);">Premium ($999)</th>
+                                <th class="py-3">Luxury ($1,699)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-start ps-4 fw-semibold">Trip Duration</td>
+                                <td>3 Days / 2 Nights</td>
+                                <td>5 Days / 4 Nights</td>
+                                <td class="fw-semibold bg-success-subtle">6 Days / 5 Nights</td>
+                                <td>8 Days / 7 Nights</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start ps-4 fw-semibold">Hotel Category</td>
+                                <td>3-Star Hotel</td>
+                                <td>4-Star Resort</td>
+                                <td class="fw-bold bg-success-subtle">5-Star Resort</td>
+                                <td>Private Pool Villa</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start ps-4 fw-semibold">Meals Included</td>
+                                <td>Breakfast Only</td>
+                                <td>Breakfast &amp; Dinner</td>
+                                <td class="fw-bold bg-success-subtle">All-Inclusive Meals</td>
+                                <td>All Meals + Private Chef</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start ps-4 fw-semibold">Airport Transfers</td>
+                                <td>Shared Shuttle</td>
+                                <td>Private Sedan</td>
+                                <td class="fw-bold bg-success-subtle">Private SUV / Boat</td>
+                                <td>Private Helicopter</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start ps-4 fw-semibold">Dedicated Tour Guide</td>
+                                <td class="text-danger fw-bold">✖</td>
+                                <td>Group Guide</td>
+                                <td class="text-success fw-bold bg-success-subtle">✔ Personal Guide</td>
+                                <td class="text-success fw-bold">✔ 24/7 Butler</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start ps-4 fw-semibold">Travel &amp; Medical Insurance</td>
+                                <td class="text-danger fw-bold">✖</td>
+                                <td class="text-success fw-bold">✔</td>
+                                <td class="text-success fw-bold bg-success-subtle">✔</td>
+                                <td class="text-success fw-bold">✔</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start ps-4 fw-semibold">Free Rescheduling</td>
+                                <td class="text-danger fw-bold">✖</td>
+                                <td class="text-danger fw-bold">✖</td>
+                                <td class="text-success fw-bold bg-success-subtle">✔ Up to 48 hrs</td>
+                                <td class="text-success fw-bold">✔ Anytime</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section class="py-5">
+            <div class="container py-3">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-8">
+                        <div class="text-center mb-5 wow animate_animated animate_animated">
+                            <span class="text-uppercase fw-bold text-success tracking-widest small_sub_badge">Get Questions?</span>
+                            <h2 class="fw-bold text-dark mt-2">Frequently Asked Questions</h2>
+                        </div>
+
+                        <div class="accordion" id="packagesFaqAccordion">
+
+                            <!-- FAQ 1 -->
+                            <div class="accordion-item border rounded-3 mb-3 overflow-hidden shadow-sm">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fw-bold text-dark" type="button" data-bs-toggler="collapse" 
+                                    data-bs-target="#faqOne" aria-expanded="true">
+                                        1. Are international flights included in these tour package prices?
+                                    </button>
+                                </h2>
+                                <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#packagesFaqAccordion">
+                                    <div class="accordion-body text-secondary small">
+                                        Our listed package prices cover luxury accommodation, meals, local airport transfers, guided tours, and insurance. However, 
+                                        our travel desk can book discounted roundtrip airfare from your departure city upon request.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 2 -->
+                            <div class="accordion-item border rounded-3 mb-3 overflow-hidden shadow-sm">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fw-bold text-dark" type="button" data-bs-toggler="collapse" 
+                                    data-bs-target="#faqOne" aria-expanded="true">
+                                        2. Can I customize the itinerary or extend my stay in the Premium plan?
+                                    </button>
+                                </h2>
+                                <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#packagesFaqAccordion">
+                                    <div class="accordion-body text-secondary small">
+                                        Yes! Every package can be tailored to your schedule. You can add extra nights, upgrade room categories, 
+                                        or include private adventure excursions before finalizing your booking.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 3 -->
+                            <div class="accordion-item border rounded-3 mb-3 overflow-hidden shadow-sm">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fw-bold text-dark" type="button" data-bs-toggler="collapse" 
+                                    data-bs-target="#faqOne" aria-expanded="true">
+                                        3. What is your cancellation and refund policy?
+                                    </button>
+                                </h2>
+                                <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#packagesFaqAccordion">
+                                    <div class="accordion-body text-secondary small">
+                                        Cancellations made 14 days prior to departure receive a 100% full refund. Premium and Luxury plan holders also enjoy 
+                                        complimentary date rescheduling up to 48 hours before departure.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 4 -->
+                            <div class="accordion-item border rounded-3 mb-3 overflow-hidden shadow-sm">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fw-bold text-dark" type="button" data-bs-toggler="collapse" 
+                                    data-bs-target="#faqOne" aria-expanded="true">
+                                        4. Do you assist with travel visas and documentation?
+                                    </button>
+                                </h2>
+                                <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#packagesFaqAccordion">
+                                    <div class="accordion-body text-secondary small">
+                                        Absolutely. Our dedicated visa support team provides complete checklist guidance, hotel confirmation vouchers, and 
+                                        embassy appointment assistance for all international destinations.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer Area -->
+    <footer style="background-color: #f0eeed;" class="py-4 text-center text-muted small">
+        WanderNest Travel Assignment &copy; All Rights Reserved.
+    </footer>
+
+    <!-- Scripts Loader Module -->
+    <script src="./assets/plugins/jquery.min.js"></script>
+    <script src="./assets/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./assets/plugins/wow.min.js"></script>
+
+    <script>
+        new WOW({ animateClass: 'animate__animated' }).init();
+    </script>
+
+</body>
+</html>

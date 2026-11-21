@@ -444,3 +444,52 @@ a {
     color: var(--primary-travel-teal);
     box-shadow: none;
 }
+
+/* PACKAGE PAGE */
+.packages_banner_section {
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.pricing_card {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    transition: var(--transition-smooth);
+}
+.pricing_card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+}
+.featured_plan_card {
+    border: 2px solid var(--primary-travel-teal);
+    transform: translateY(-8px);
+}
+.featured_plan_card:hover {
+    transform: translateY(-12px);
+}
+.featured_plan_badge {
+    top: -14px;
+    right: 20px;
+    background-color: var(--secondary-sunset-gold);
+    color: var(--dark-slate-grey);
+    font-size: 12px;
+    font-weight: 800;
+    padding: 5px 14px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.comparison_table {
+    min-width: 720px;
+}
+/* Gallery & Fancybox Overlay */
+.gallery_banner_section {
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=1200&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

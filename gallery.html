@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Gallery - WanderNest Travel Agency</title>
+
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/bootstrap.min.css">
+    <!-- FancyBox -->
+    <link rel="stylesheet" href="./assets/plugins/fancybox/jquery-fancybox.min.css">
+    <!-- Animation Module -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Custom External CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="sticky-top shadow-sm bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light py-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-3 text-uppercase" href="index.html" style="color: var(--dark-slate-grey);">
+                    Wander <span style="color: var(--primary-travel-teal);">Nest</span>
+                </a>
+
+                <!-- Fluid Harmburger Reponsive Toggle Mechinism Trigger Button -->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggler="collapse" 
+                    data-bs-target="#wandernest_global_nav" aria-controls="wandernest_global_nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu Directory FLex columns wrapper Links grid -->
+                <div class="collapse navbar-collapse" id="wandernest_global_nav">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3 fw-medium">
+                        <li class="nav-item">
+                            <a class="nav-link active px-2 text-success" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 text-secondary" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 text-secondary" href="destinations.html">Destinations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 text-secondary" href="packages.html">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 text-secondary" href="gallery.html">Gallery</a>
+                        </li>
+                    </ul>
+
+                    <!-- Booking Triggler Control Module -->
+                    <div class="d-flex">
+                        <a href="contact.html" class="btn px-4 py-2 rounded-pill fw-semibold text-white" 
+                        style="background-color: var(--primary-travel-teal); transition: var(--transition-smooth);">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="gallery_banner_section text-white d-flex align-items-center justify-content-center">
+            <div class="container text-center wow animate__animated animate_fadeIn">
+                <h1 class="display-4 fw-bold">Captured Memories</h1>
+                <nav class="breadcrumb_trail fs-6 mt-2">
+                    <a href="index.html" class="text-white opacity-75">Home</a> &gt; <span class="text-white fw-semibold">Gallery</span>
+                </nav>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container py-4">
+                <div class="text-center mb-5 wow animate__animated animate_fadeInUp">
+                    <span class="text-uppercase fw-bold text-success tracking-widest small_sub_badge">Visual Stories</span>
+                    <h2 class="display-5 fw-bold text-dark my-2">Moments Around The Globe</h2>
+                    <p class="text-secondary">
+                        Click any photo to open full-screen Fancybox gallery with thumbnails, or play our featured travel film.
+                    </p>
+                </div>
+
+                <div class="masonry_gallery_grid">
+                    <!-- Item 01: Maldives (Tall) -->
+                    <div class="mosonry_item wow animate__animated animate_fadeInUp">
+                        <a href="/assets/images/destination/Maldives.jpg" data-fancybox="wandernest-gallery" data-caption="Maldives Overwater Lagoon Villas — South Male Atoll">
+                            <img src="./assets/images/destination/Maldives.jpg" alt="Maldives" style="height: 360px;">
+                            <div class="gallery_hover_overlay">
+                                <span class="zoom_circle_icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <h6 class="text-white fw-bold mt-2 mb-0">Maldives Lagoon</h6>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Item 02: Featured Video Popup -->
+                    <div class="mosonry_item wow animate__animated animate_fadeInUp">
+                        <a href="https://youtu.be/sY6BGVE-PBE?si=dSiT4nckHD0AVKqk" data-fancybox="wandernest-gallery" data-caption="WanderNest Official Travel Film — Exploring Earth's Wonders (4K Video)">
+                            <img src="./assets/images/travel_img/Travel_Video.jpg" alt="Travel Film Video" style="height: 260px;">
+                            <span class="video_tag_badge position-absolute">🎬 Watch Video</span>
+                            <div class="gallery_hover_overlay">
+                                <span class="zoom_circle_icon bg-warning text-dark">▶</span>
+                                <h6 class="text-white fw-bold mt-2 mb-0">Play Travel Film</h6>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Item 03: Swiss Alps (Medium) -->
+                    <div class="mosonry_item wow animate__animated animate_fadeInUp">
+                        <a href="/assets/images/destination/Swiss_alps.jpg" data-fancybox="wandernest-gallery" data-caption="Swiss Alps Emerald Valley — Zermatt, Switzerland">
+                            <img src="./assets/images/destination/Swiss_alps.jpg" alt="Swiss Alps" style="height: 300px;">
+                            <div class="gallery_hover_overlay">
+                                <span class="zoom_circle_icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <h6 class="text-white fw-bold mt-2 mb-0">Swiss Alps Peaks</h6>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Item 04: Kyoto Temple (Tall) -->
+                    <div class="mosonry_item wow animate__animated animate_fadeInUp">
+                        <a href="/assets/images/destination/kyoto.jpg" data-fancybox="wandernest-gallery" data-caption="Kyoto Ancient Pagoda & Cherry Blossoms — Japan">
+                            <img src="./assets/images/destination/kyoto.jpg" alt="Kyoto Japan" style="height: 380px;">
+                            <div class="gallery_hover_overlay">
+                                <span class="zoom_circle_icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <h6 class="text-white fw-bold mt-2 mb-0">Kyoto Heritage</h6>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Item 05: Bali -->
+                    <div class="mosonry_item wow animate__animated animate_fadeInUp">
+                        <a href="/assets/images/destination/Bali.jpg" data-fancybox="wandernest-gallery" data-caption="Uluwatu Cliffside Temple & Ocean — Bali, Indonesia">
+                            <img src="./assets/images/destination/Bali.jpg" alt="Bali" style="height: 250px;">
+                            <div class="gallery_hover_overlay">
+                                <span class="zoom_circle_icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <h6 class="text-white fw-bold mt-2 mb-0">Bali Coastline</h6>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Item 06: Paris -->
+                    <div class="mosonry_item wow animate__animated animate_fadeInUp">
+                        <a href="/assets/images/destination/paris.jpg" data-fancybox="wandernest-gallery" data-caption="Eiffel Tower Golden Hour — Paris, France">
+                            <img src="./assets/images/destination/paris.jpg" alt="Paris" style="height: 350px;">
+                            <div class="gallery_hover_overlay">
+                                <span class="zoom_circle_icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <h6 class="text-white fw-bold mt-2 mb-0">Paris Lights</h6>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Item 07: Manali -->
+                    <div class="mosonry_item wow animate__animated animate_fadeInUp">
+                        <a href="/assets/images/destination/manali.jpg" data-fancybox="wandernest-gallery" data-caption="Snowy Himalayan Pine Forest — Manali, India">
+                            <img src="./assets/images/destination/manali.jpg" alt="Manali" style="height: 280px;">
+                            <div class="gallery_hover_overlay">
+                                <span class="zoom_circle_icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <h6 class="text-white fw-bold mt-2 mb-0">Manali Valley</h6>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer Area -->
+    <footer style="background-color: #f0eeed;" class="py-4 text-center text-muted small">
+        WanderNest Travel Assignment &copy; All Rights Reserved.
+    </footer>
+
+    <!-- Scripts Loader Module -->
+    <script src="./assets/plugins/jquery.min.js"></script>
+    <script src="./assets/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./assets/plugins/wow.min.js"></script>
+    <script src="./assets/plugins/fancybox/jquery-fancybox.min.js"></script>
+
+    <script>
+        new WOW({ animateClass: 'animate__animated' }).init();
+
+        // 2. Initialize Fancybox with Captions, Thumbnails & Video Support
+        $('[data-fancybox="wandernest-gallery"]').fancybox({
+            thumbs: {
+                    autoStart: true
+                },
+                buttons: [
+                    "zoom",
+                    "slideShow",
+                    "thumbs",
+                    "close"
+                ]
+        });
+    </script>
+
+</body>
+</html>
