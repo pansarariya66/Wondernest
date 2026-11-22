@@ -1,3 +1,76 @@
+/* Responsive Breakpoints */
+/* TABLET (max-width: 991px */
+@media (max-width: 991px) {
+    .slider_title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .sticky_booking_card {
+        position: static;
+    }
+    .newsletter_float_box {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 32px 24px;
+        margin-bottom: 24px;
+    }
+    .footer_main_directory {
+        padding: 40px 24px;
+        border-radius: 20px;
+    }
+}
+/* Mobile Breakpoint (360px to 575px */
+@media (max-width: 575px) {
+    .single_slide {
+        height: 75vh;
+        padding: 0 16px;
+    }
+    .slider_title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .slider_text {
+        font-size: 15px;
+        margin-bottom: 24px;
+    }
+    .about_img_wrapper img {
+        height: 320px;
+    }
+    .experience_floating_badge {
+        right: 12px;
+        left: auto;
+        bottom: -16px;
+        width: 135px;
+        padding: 10px;
+    }
+    .custom_timeline_container::after {
+        left: 20px;
+    }
+    .timeline_item {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 12px;
+    }
+    .left_node,
+    .right_node {
+        left: 0;
+    }
+    .timeline_item::after,
+    .right_node::after {
+        left: 12px;
+        right: auto;
+    }
+    .zoom_pan_container {
+        height: 280px;
+    }
+    .thumb_gallery_img {
+        height: 70px;
+    }
+}
+
+
 /* Responsive CSS */
 .masonry_gallery_grid {
     column-count: 3;
