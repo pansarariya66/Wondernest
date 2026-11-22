@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog &amp; Stories - WanderNest Travel Agency</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/bootstrap.min.css">
+    <!-- External Style Sheet -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="sticky-top shadow-sm bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light py-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-3 text-uppercase" href="index.html" style="color: var(--dark-slate-grey);">
+                    Wander <span style="color: var(--primary-travel-teal);">Nest</span>
+                </a>
+
+                <!-- Fluid Harmburger Reponsive Toggle Mechinism Trigger Button -->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggler="collapse" 
+                    data-bs-target="#wandernest_global_nav" aria-controls="wandernest_global_nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu Directory FLex columns wrapper Links grid -->
+                <div class="collapse navbar-collapse" id="wandernest_global_nav">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3 fw-medium">
+                        <li class="nav-item">
+                            <a class="nav-link active px-2 text-success" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 text-secondary" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 text-secondary" href="destinations.html">Destinations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 text-secondary" href="packages.html">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 text-secondary" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 text-secondary" href="blog.html">Blog</a>
+                        </li>
+                    </ul>
+
+                    <!-- Booking Triggler Control Module -->
+                    <div class="d-flex">
+                        <a href="contact.html" class="btn px-4 py-2 rounded-pill fw-semibold text-white" 
+                        style="background-color: var(--primary-travel-teal); transition: var(--transition-smooth);">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="packages_banner_section text-white d-flex align-items-center justify-content-center">
+            <div class="container text-center wow animate_animated animate_fadeIn">
+                <h1 class="display-4 fw-bold">Travel &amp; Tips</h1>
+                <nav class="breadcrumb_trail fs-6 mt-2">
+                    <a href="index.html" class="text-white opacity-75">Home</a> &gt; <span class="text-white fw-semibold">Blog</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Blog Card List -->
+        <section class="py-5">
+            <div class="container py-4">
+                <div class="row g-5">
+                    <!-- LEFT COLUMN: 6 BLOG CARD GRID -->
+                    <div class="col-12 col-lg-8">
+                        <div class="row g-4" id="blogCardContainer">
+
+                            <!-- Blog 01: -->
+                            <div class="col-12 col-md-6 blog_card_item">
+                                <article class="tour_card_wrapper bg-white shadow-sm h-100 border-0">
+                                    <div class="tour_img_shell position-relative">
+                                        <span class="category_tag_badge position-absolute">Beach Guide</span>
+                                        <img src="./assets/images/destination/Maldives.jpg" alt="Maldives Packing">
+                                    </div>
+                                    <div class="p-4 d-flex flex-column flex-grow-1">
+                                        <div class="text-muted small mb-2">
+                                            <img src="./assets/images/icon/calendar.png" alt="Calendar" class="calendar_icon">Nov 18, 2026 &nbsp; &nbsp; ✍️ Dharmi Sutariya
+                                        </div>
+                                        <h5 class="fw-bold text-dark mb-2">10 Essential Packing Tips for a Luxury Maldives Villa Stay</h5>
+                                        <p class="text-secondary small clamped_desc mb-3">
+                                            Discover what to pack for crystal-clear lagoon snorkeling, sunset yacht dinners, and tropical island hopping without overpacking.
+                                        </p>
+                                        <a href="destination-detail.html" class="explore_link_btn fw-bold mt-auto">Read More →</a>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Blog 02: -->
+                            <div class="col-12 col-md-6 blog_card_item">
+                                <article class="tour_card_wrapper bg-white shadow-sm h-100 border-0">
+                                    <div class="tour_img_shell position-relative">
+                                        <span class="category_tag_badge position-absolute">Mountain Adventure</span>
+                                        <img src="./assets/images/destination/Swiss_alps.jpg" alt="Swiss Rail">
+                                    </div>
+                                    <div class="p-4 d-flex flex-column flex-grow-1">
+                                        <div class="text-muted small mb-2">
+                                            <img src="./assets/images/icon/calendar.png" alt="Calendar" class="calendar_icon">Nov 14, 2026 &nbsp; &nbsp; ✍️ Resha Vaghasiya
+                                        </div>
+                                        <h5 class="fw-bold text-dark mb-2">Riding the Glacier Express Across the Snowy Swiss Alps</h5>
+                                        <p class="text-secondary small clamped_desc mb-3">
+                                            A complete window-seat guide to booking panoramic train routes from Zermatt to St. Moritz during peak winter snowfall.
+                                        </p>
+                                        <a href="destination-detail.html" class="explore_link_btn fw-bold mt-auto">Read More →</a>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Blog 03: -->
+                            <div class="col-12 col-md-6 blog_card_item">
+                                <article class="tour_card_wrapper bg-white shadow-sm h-100 border-0">
+                                    <div class="tour_img_shell position-relative">
+                                        <span class="category_tag_badge position-absolute">Culture &amp; Food</span>
+                                        <img src="./assets/images/destination/kyoto.jpg" alt="Kyoto Temple">
+                                    </div>
+                                    <div class="p-4 d-flex flex-column flex-grow-1">
+                                        <div class="text-muted small mb-2">
+                                            <img src="./assets/images/icon/calendar.png" alt="Calendar" class="calendar_icon">Nov 09, 2026 &nbsp; &nbsp; ✍️ Ashish Kanjariya
+                                        </div>
+                                        <h5 class="fw-bold text-dark mb-2">Hidden Tea Houses &amp; Ancient Shrines of Old Kyoto</h5>
+                                        <p class="text-secondary small clamped_desc mb-3">
+                                            Step away from the tourist crowds and experience authentic Japanese matcha ceremonies in historic wooden alleys.
+                                        </p>
+                                        <a href="destination-detail.html" class="explore_link_btn fw-bold mt-auto">Read More →</a>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Blog 04: -->
+                            <div class="col-12 col-md-6 blog_card_item">
+                                <article class="tour_card_wrapper bg-white shadow-sm h-100 border-0">
+                                    <div class="tour_img_shell position-relative">
+                                        <span class="category_tag_badge position-absolute">Budget Hacks</span>
+                                        <img src="./assets/images/destination/bali_villa.jpg" alt="Bali Villas">
+                                    </div>
+                                    <div class="p-4 d-flex flex-column flex-grow-1">
+                                        <div class="text-muted small mb-2">
+                                            <img src="./assets/images/icon/calendar.png" alt="Calendar" class="calendar_icon">Nov 03, 2026 &nbsp; &nbsp; ✍️ Riti Vamja
+                                        </div>
+                                        <h5 class="fw-bold text-dark mb-2">How to Plan a 7-Day Bali Cliffside Retreat Under $900</h5>
+                                        <p class="text-secondary small clamped_desc mb-3">
+                                            Smart tips on choosing between Ubud jungle villas and Uluwatu ocean resorts while saving on private airport transfers.
+                                        </p>
+                                        <a href="destination-detail.html" class="explore_link_btn fw-bold mt-auto">Read More →</a>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Blog 05: -->
+                            <div class="col-12 col-md-6 blog_card_item">
+                                <article class="tour_card_wrapper bg-white shadow-sm h-100 border-0">
+                                    <div class="tour_img_shell position-relative">
+                                        <span class="category_tag_badge position-absolute">City Escapes</span>
+                                        <img src="./assets/images/destination/dubai.jpg" alt="Dubai">
+                                    </div>
+                                    <div class="p-4 d-flex flex-column flex-grow-1">
+                                        <div class="text-muted small mb-2">
+                                            <img src="./assets/images/icon/calendar.png" alt="Calendar" class="calendar_icon">Oct 27, 2026 &nbsp; &nbsp; ✍️ Raj Sharma
+                                        </div>
+                                        <h5 class="fw-bold text-dark mb-2">Dubai Beyond Skyscrapers: Desert Safaris & Old Souks</h5>
+                                        <p class="text-secondary small clamped_desc mb-3">
+                                            Balance futuristic Burj Khalifa views with traditional abra boat rides across Dubai Creek and stargazing desert camps.
+                                        </p>
+                                        <a href="destination-detail.html" class="explore_link_btn fw-bold mt-auto">Read More →</a>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Blog 06: -->
+                            <div class="col-12 col-md-6 blog_card_item">
+                                <article class="tour_card_wrapper bg-white shadow-sm h-100 border-0">
+                                    <div class="tour_img_shell position-relative">
+                                        <span class="category_tag_badge position-absolute">Travel Safety</span>
+                                        <img src="./assets/images/travel_img/Travel_safety.jpg" alt="Travel">
+                                    </div>
+                                    <div class="p-4 d-flex flex-column flex-grow-1">
+                                        <div class="text-muted small mb-2">
+                                            <img src="./assets/images/icon/calendar.png" alt="Calendar" class="calendar_icon">Oct 20, 2026 &nbsp; &nbsp; ✍️ Dishant Khunt
+                                        </div>
+                                        <h5 class="fw-bold text-dark mb-2">2026 International Visa & Travel Insurance Checklist2026 International Visa & Travel Insurance Checklist</h5>
+                                        <p class="text-secondary small clamped_desc mb-3">
+                                            Everything first-time flyers need to prepare before boarding an international flight, from e-visas to medical coverage.
+                                        </p>
+                                        <a href="destination-detail.html" class="explore_link_btn fw-bold mt-auto">Read More →</a>
+                                    </div>
+                                </article>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- RIGHT COLUMN: SIDEBAR WIDGETS -->
+                    <aside class="col-12 col-lg-4">
+                        <!-- Search Widget -->
+                        <div class="bg-white p-4 rounded-4 shadow-sm mb-4">
+                            <h5 class="fw-bold text-dark mb-3">Search Articles</h5>
+                            <div class="input-group">
+                                <input type="text" id="blogSearchInput" class="form-control rounded-start-pill px-3" placeholder="Search destination tips...">
+                                <button class="btn text-white rounded-end-pill px-4" type="button" style="background-color: var(--primary-travel-teal);">Go</button>
+                            </div>
+                        </div>
+
+                        <!-- Categories Widget -->
+                        <div class="bg-white p-4 rounded-4 shadow-sm mb-4">
+                            <h5 class="fw-bold text-dark mb-3">Categories</h5>
+                            <ul class="list-unstyled d-flex flex-column gap-2 m-0 small">
+                                <li class="d-flex justify-content-between border-bottom pb-2">
+                                    <a href="#" class="text-secondary fw-medium">Tropical Beach Guide</a>
+                                    <span class="badge bg-light text-dark rounded-pill">12</span>
+                                </li>
+                                <li class="d-flex justify-content-between border-bottom pb-2">
+                                    <a href="#" class="text-secondary fw-medium">Mountain &amp; Trekking</a>
+                                    <span class="badge bg-light text-dark rounded-pill">08</span>
+                                </li>
+                                <li class="d-flex justify-content-between border-bottom pb-2">
+                                    <a href="#" class="text-secondary fw-medium">Culture Heritage</a>
+                                    <span class="badge bg-light text-dark rounded-pill">15</span>
+                                </li>
+                                <li class="d-flex justify-content-between border-bottom pb-2">
+                                    <a href="#" class="text-secondary fw-medium">Visa &amp; Budget Hacks</a>
+                                    <span class="badge bg-light text-dark rounded-pill">09</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Recent Post Widget -->
+                        <div class="bg-white p-4 rounded-4 shadow-sm">
+                            <h5 class="fw-bold text-dark mb-3">Recent Posts</h5>
+                            <div class="d-flex flex-column gap-3">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="./assets/images/destination/Maldives.jpg" class="rounded-3" style="width: 65px; height: 65px; object-fit: cover;" alt="Recent 1">
+                                    <div>
+                                        <span class="text-muted small d-block">Nov 18, 2026</span>
+                                        <a href="destination-detail.html" class="fw-bold text-dark small">10 Packing Tips for Maldives</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="./assets/images/destination/Swiss_alps.jpg" class="rounded-3" style="width: 65px; height: 65px; object-fit: cover;" alt="Recent 2">
+                                    <div>
+                                        <span class="text-muted small d-block">Nov 14, 2026</span>
+                                        <a href="destination-detail.html" class="fw-bold text-dark small">Glacier Express Swiss Alps</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="./assets/images/destination/kyoto.jpg" class="rounded-3" style="width: 65px; height: 65px; object-fit: cover;" alt="Recent 3">
+                                    <div>
+                                        <span class="text-muted small d-block">Nov 09, 2026</span>
+                                        <a href="destination-detail.html" class="fw-bold text-dark small">Hidden Tea Houses of Kyoto</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer Area -->
+    <footer style="background-color: #f0eeed;" class="py-4 text-center text-muted small">
+        WanderNest Travel Assignment &copy; All Rights Reserved.
+    </footer>
+
+    <script src="assets/plugins/jquery.min.js"></script>
+    <script src="assets/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/plugins/wow.min.js"></script>
+
+    <script>
+        new WOW({ animateClass: 'animate__animated' }).init();
+
+        // Live Sidebar Blog Search Filter
+        document.getElementById('blogSearchInput').addEventListener('keyup', function() {
+            const query = this.value.toLowerCase();
+            document.querySelectorAll('.blog_card_item').forEach(card => {
+                const text = card.innerText.toLowerCase();
+                card.style.display = text.includes(query) ? 'block' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>

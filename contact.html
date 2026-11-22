@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact &amp; Book Now - WanderNest Travel Agency</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/bootstrap.min.css">
+    <!-- Custom External CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="sticky-top shadow-sm bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light py-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-3 text-uppercase" href="index.html" style="color: var(--dark-slate-grey);">
+                    Wander <span style="color: var(--primary-travel-teal);">Nest</span>
+                </a>
+
+                <!-- Fluid Harmburger Reponsive Toggle Mechinism Trigger Button -->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggler="collapse" 
+                    data-bs-target="#wandernest_global_nav" aria-controls="wandernest_global_nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu Directory FLex columns wrapper Links grid -->
+                <div class="collapse navbar-collapse" id="wandernest_global_nav">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3 fw-medium">
+                        <li class="nav-item">
+                            <a class="nav-link active px-2 text-success" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 text-secondary" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 text-secondary" href="destinations.html">Destinations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 text-secondary" href="packages.html">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 text-secondary" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 text-secondary" href="blog.html">Blog</a>
+                        </li>
+                    </ul>
+
+                    <!-- Booking Triggler Control Module -->
+                    <div class="d-flex">
+                        <a href="contact.html" class="btn px-4 py-2 rounded-pill fw-semibold text-white" 
+                        style="background-color: var(--primary-travel-teal); transition: var(--transition-smooth);">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="contact_banner_section text-white d-flex align-items-center justify-content-center">
+            <div class="container text-center wow animate__animated animate_fadeIn">
+                <h1 class="display-4 fw-bold">Get In Touch</h1>
+                <nav class="breadcrumb_trail fs-6 mt-2">
+                    <a href="index.html" class="text-white opacity-75">Home</a> &gt; <span class="text-white fw-semibold">Contact Us</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- ADDRESS INFO CARDS -->
+        <section class="py-5">
+            <div class="container py-3">
+                <div class="row g-4 mb-5 text-center">
+                    <div class="col-12 col-md-4">
+                        <div class="icon_box_card bg-white p-4 rounded-4 shadow-sm h-100">
+                            <div class="fs-1 mb-2">📍</div>
+                            <h5 class="fw-bold text-dark">Headquarters Office</h5>
+                            <p class="text-secondary small m-0">
+                                402 Horizon Business Hub, VIP Road, Vesu, Surat, Gujarat 395007
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="icon_box_card bg-white p-4 rounded-4 shadow-sm h-100">
+                            <div class="fs-1 mb-2">📞</div>
+                            <h5 class="fw-bold text-dark">24/7 Booking Helpline</h5>
+                            <p class="text-secondary small m-0">
+                                bookings@wandernest.com<br>support@wandernest.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONTACT FORM (VALIDATION) + GOOGLE MAP -->
+                <div class="row g-5 align-items-center">
+                    <!-- LEFT: Validate Contact Form -->
+                    <div class="col-12 col-lg-6">
+                        <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm h-100">
+                            <span class="text-uppercase fw-bold text-success small">Plan Your Trip</span>
+                            <h3 class="fw-bold text-dark my-2">Send Us a Message</h3>
+                            <p class="text-secondary small mb-4">
+                                Fill in your details below and our travel experts will respond within 2 hours.
+                            </p>
+
+                            <form id="contactBookingForm">
+                                <div class="row g-3">
+                                    <div class="col-12 col-md-6">
+                                        <label class="form-label small fw-bold text-dark">Full Name *</label>
+                                        <input type="text" class="form-control rounded-3 py-2" placeholder="Enter Your full name" minlength="3" required>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label class="form-label small fw-bold text-dark">Email Address *</label>
+                                        <input type="text" class="form-control rounded-3 py-2" placeholder="example@gmail.com" required>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label class="form-label small fw-bold text-dark">Phone Number *</label>
+                                        <input type="text" class="form-control rounded-3 py-2" placeholder="10-digit mobile number" pattern="[0-9]{10}" title="Please Enter a 10 digits phone number" required>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label class="form-label small fw-bold text-dark">Subject *</label>
+                                        <select class="form-select rounded-3 py-2 required">
+                                            <option value="">Choose inquiry type...</option>
+                                            <option value="booking">Tour Package Booking</option>
+                                            <option value="custom">Custom Itinerary Request</option>
+                                            <option value="visa">Visa &amp; Flight Support</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label small fw-bold text-dark">Your Message *</label>
+                                        <textarea class="form-control rounded-3" rows="4" placeholder="Tell us your preferred destination, dates, and number of guests..."
+                                            minlength="10" required>
+                                        </textarea>
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <button type="submit" class="btn w-100 py-3 rounded-pill fw-bold text-white shadow-sm" style="background-color: var(--primary-travel-teal);">
+                                            Submit Inquiry Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Right: Google Map Iframe -->
+                    <div class="col-12 col-lg-6">
+                        <div class="bg-white p-2 rounded-4 shadow-sm h-100 overflow-hidden" style="min-height: 420px;">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119066.41709455666!2d72.73988484335938!3d21.159340299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0; border-radius: 14px; min-height: 420px;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- WORKING BOOTSTRAP SUCCESS MODAL -->
+    <div class="modal fade" id="bookingSuccessModal" tabindex="1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 border-0 shadow p-4 text-center">
+                <div class="modal-body">
+                    <div class="display-3 text-success mb-3">✅</div>
+                    <h3 class="fw-bold text-dark">Inquiry Sent Successfully!</h3>
+                    <p class="text-secondary small mt-2 mb-4">
+                        Thank you form contacting <strong>WanderNest</strong>. Our senior travel consultant has received your request and will call or email you shortly.
+                    </p>
+                    <button type="button" class="btn px-5 py-2 rounded-pill fw-bold text-white" data-bs-dismiss="modal" style="background-color: var(--primary-travel-teal);">
+                        Done
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Area -->
+    <footer style="background-color: #f0eeed;" class="py-4 text-center text-muted small">
+        WanderNest Travel Assignment &copy; All Rights Reserved.
+    </footer>
+
+    <script src="assets/plugins/jquery.min.js"></script>
+    <script src="assets/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/plugins/wow.min.js"></script>
+
+    <script>
+        new WOW({ animateClass: 'animate__animated' }).init();
+
+        // Form Submit Handler -> Triggers Bootstrap Modal
+        document.getElementById('contactBookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const successModal = new bootstrap.Modal(document.getElementById('bookingSuccessModal'));
+            successModal.show();
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>
